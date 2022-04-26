@@ -113,7 +113,7 @@ class _TopChannelsWidgetState extends State<TopChannelsWidget> {
                       overflow: TextOverflow.ellipsis,
                       style: TextStyle(
                           height: 1.4,
-                          color: Colors.black,
+                          color: Style.Colors.titleColor,
                           fontWeight: FontWeight.bold,
                           fontSize: 10.0),
                     ),
