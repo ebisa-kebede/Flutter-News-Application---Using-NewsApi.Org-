@@ -34,13 +34,6 @@ class MyApp extends StatelessWidget {
       home: SplashScreen(
           seconds: 5,
           navigateAfterSeconds: MainScreen(),
-          // title: new Text(
-          //   'News Application',
-          //   style: new TextStyle(
-          //       fontWeight: FontWeight.bold,
-          //       fontSize: 20.0,
-          //       color: Colors.white),
-          // ),
           image: new Image.asset('assets/img/logo.png'),
           photoSize: 80.0,
           backgroundColor: Style.Colors.background,
