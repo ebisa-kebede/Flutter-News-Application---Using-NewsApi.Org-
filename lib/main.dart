@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:newsapp/screens/main_screen.dart';
 
+import 'package:splashscreen/splashscreen.dart';
+import 'package:newsapp/style/theme.dart' as Style;
+
 void main() {
   runApp(MyApp());
 }
@@ -28,7 +31,21 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MainScreen(),
+      home: SplashScreen(
+          seconds: 5,
+          navigateAfterSeconds: MainScreen(),
+          // title: new Text(
+          //   'News Application',
+          //   style: new TextStyle(
+          //       fontWeight: FontWeight.bold,
+          //       fontSize: 20.0,
+          //       color: Colors.white),
+          // ),
+          image: new Image.asset('assets/img/logo.png'),
+          photoSize: 80.0,
+          backgroundColor: Style.Colors.background,
+          styleTextUnderTheLoader: new TextStyle(),
+          loaderColor: Colors.white),
     );
   }
 }

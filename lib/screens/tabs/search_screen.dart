@@ -49,7 +49,11 @@ class _SearchScreenState extends State<SearchScreen> {
                         setState(() {
                           FocusScope.of(context).requestFocus(FocusNode());
                           _searchController.clear();
-                          searchBloc..search(_searchController.text);
+                          if (_searchController.text == null) {
+                            searchBloc..search('tesla');
+                          } else {
+                            searchBloc..search(_searchController.text);
+                          }
                         });
                       })
                   : Icon(

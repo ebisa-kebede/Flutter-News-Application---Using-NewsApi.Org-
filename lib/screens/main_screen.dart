@@ -29,9 +29,15 @@ class _MainScreenState extends State<MainScreen> {
         child: AppBar(
           backgroundColor: Style.Colors.mainColor,
           title: Text(
-            "NewsApp",
+            "LevelUp",
             style: TextStyle(color: Colors.white),
           ),
+          actions: [
+            IconButton(
+              icon: Icon(Icons.settings),
+              onPressed: () {},
+            ),
+          ],
         ),
       ),
       body: SafeArea(
@@ -70,13 +76,13 @@ class _MainScreenState extends State<MainScreen> {
                 topRight: Radius.circular(30.0),
               ),
               child: BottomNavigationBar(
-                backgroundColor: Colors.white,
+                backgroundColor: Style.Colors.BottomNavbackground_,
                 iconSize: 20,
                 unselectedItemColor: Style.Colors.grey,
-                unselectedFontSize: 9.5,
-                selectedFontSize: 9.5,
+                unselectedFontSize: 8.5,
+                selectedFontSize: 8.5,
                 type: BottomNavigationBarType.fixed,
-                fixedColor: Style.Colors.mainColor,
+                fixedColor: Style.Colors.titleColor,
                 currentIndex: snapshot.data.index,
                 onTap: _bottomNavBarBloc.pickItem,
                 items: [

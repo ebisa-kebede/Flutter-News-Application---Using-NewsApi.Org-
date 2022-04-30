@@ -3,7 +3,7 @@ description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -24,7 +24,6 @@ dependencies:
   flutter:
     sdk: flutter
 
-
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.3
@@ -36,6 +35,7 @@ dependencies:
   timeago: ^2.0.26
   flutter_html: ^0.11.1
   url_launcher: ^5.5.0
+  splashscreen: ^1.3.5
 
 dev_dependencies:
   flutter_test:
@@ -46,77 +46,77 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
 
   assets:
-     - assets/img/placeholder.jpg
-     - assets/logos/abc-news.png
-     - assets/logos/al-jazeera-english.png
-     - assets/logos/ars-technica.png
-     - assets/logos/associated-press.png
-     - assets/logos/axios.png
-     - assets/logos/bbc-news.png
-     - assets/logos/bbc-sport.png
-     - assets/logos/bleacher-report.png
-     - assets/logos/bloomberg.png
-     - assets/logos/business-insider.png
-     - assets/logos/buzzfeed.png
-     - assets/logos/cbc-news.png
-     - assets/logos/cbs-news.png
-     - assets/logos/cnn.png
-     - assets/logos/espn.png
-     - assets/logos/financial-post.png
-     - assets/logos/fortune.png
-     - assets/logos/fox-news.png
-     - assets/logos/fox-sports.png
-     - assets/logos/google-news.png
-     - assets/logos/hacker-news.png
-     - assets/logos/ign.png
-     - assets/logos/independent.png
-     - assets/logos/mashable.png
-     - assets/logos/msnbc.png
-     - assets/logos/mtv-news.png
-     - assets/logos/national-geographic.png
-     - assets/logos/news24.png
-     - assets/logos/politico.png
-     - assets/logos/recode.png
-     - assets/logos/reuters.png
-     - assets/logos/rte.png
-     - assets/logos/techcrunch.png
-     - assets/logos/techradar.png
-     - assets/logos/the-hill.png
-     - assets/logos/the-huffington-post.png
-     - assets/logos/the-next-web.png
-     - assets/logos/the-wall-street-journal.png
-     - assets/logos/the-washington-post.png
-     - assets/logos/time.png
-     - assets/logos/wired.png
-     - assets/logos/breitbart-news.png
-     - assets/logos/crypto-coins-news.png
-     - assets/logos/engadget.png
-     - assets/logos/entertainment-weekly.png
-     - assets/logos/espn-cric-info.png
-     - assets/logos/medical-news-today.png
-     - assets/logos/national-review.png
-     - assets/logos/nbc-news.png
-     - assets/logos/new-scientist.png
-     - assets/logos/newsweek.png
-     - assets/logos/next-big-future.png
-     - assets/logos/nfl-news.png
-     - assets/logos/nhl-news.png
-     - assets/logos/polygon.png
-     - assets/logos/reddit-r-all.png
-     - assets/logos/new-york-magazine.png
-     - assets/logos/the-american-conservative.png
-     - assets/logos/the-verge.png
-     - assets/logos/the-washington-times.png
-     - assets/logos/usa-today.png
-     - assets/logos/vice-news.png
-     - assets/logos/logo_placeholder.png
+    - assets/img/placeholder.jpg
+    - assets/logos/abc-news.png
+    - assets/logos/al-jazeera-english.png
+    - assets/logos/ars-technica.png
+    - assets/logos/associated-press.png
+    - assets/logos/axios.png
+    - assets/logos/bbc-news.png
+    - assets/logos/bbc-sport.png
+    - assets/logos/bleacher-report.png
+    - assets/logos/bloomberg.png
+    - assets/logos/business-insider.png
+    - assets/logos/buzzfeed.png
+    - assets/logos/cbc-news.png
+    - assets/logos/cbs-news.png
+    - assets/logos/cnn.png
+    - assets/logos/espn.png
+    - assets/logos/financial-post.png
+    - assets/logos/fortune.png
+    - assets/logos/fox-news.png
+    - assets/logos/fox-sports.png
+    - assets/logos/google-news.png
+    - assets/logos/hacker-news.png
+    - assets/logos/ign.png
+    - assets/logos/independent.png
+    - assets/logos/mashable.png
+    - assets/logos/msnbc.png
+    - assets/logos/mtv-news.png
+    - assets/logos/national-geographic.png
+    - assets/logos/news24.png
+    - assets/logos/politico.png
+    - assets/logos/recode.png
+    - assets/logos/reuters.png
+    - assets/logos/rte.png
+    - assets/logos/techcrunch.png
+    - assets/logos/techradar.png
+    - assets/logos/the-hill.png
+    - assets/logos/the-huffington-post.png
+    - assets/logos/the-next-web.png
+    - assets/logos/the-wall-street-journal.png
+    - assets/logos/the-washington-post.png
+    - assets/logos/time.png
+    - assets/logos/wired.png
+    - assets/logos/breitbart-news.png
+    - assets/logos/crypto-coins-news.png
+    - assets/logos/engadget.png
+    - assets/logos/entertainment-weekly.png
+    - assets/logos/espn-cric-info.png
+    - assets/logos/medical-news-today.png
+    - assets/logos/national-review.png
+    - assets/logos/nbc-news.png
+    - assets/logos/new-scientist.png
+    - assets/logos/newsweek.png
+    - assets/logos/next-big-future.png
+    - assets/logos/nfl-news.png
+    - assets/logos/nhl-news.png
+    - assets/logos/polygon.png
+    - assets/logos/reddit-r-all.png
+    - assets/logos/new-york-magazine.png
+    - assets/logos/the-american-conservative.png
+    - assets/logos/the-verge.png
+    - assets/logos/the-washington-times.png
+    - assets/logos/usa-today.png
+    - assets/logos/vice-news.png
+    - assets/logos/logo_placeholder.png
+    - assets/img/logo.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:
