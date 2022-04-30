@@ -37,8 +37,7 @@ class _MainScreenState extends State<MainScreen> {
             IconButton(
               icon: Icon(Icons.info),
               onPressed: () {
-                Navigator.maybePop(
-                  context,
+                Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => AboutUs()),
                 );
               },
