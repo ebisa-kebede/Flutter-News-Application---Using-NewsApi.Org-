@@ -1,6 +1,7 @@
 import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:newsapp/bloc/bottom_navbar_bloc.dart';
+import 'package:newsapp/screens/about_us.dart';
 import 'package:newsapp/style/theme.dart' as Style;
 
 import 'tabs/home_screen.dart';
@@ -34,8 +35,13 @@ class _MainScreenState extends State<MainScreen> {
           ),
           actions: [
             IconButton(
-              icon: Icon(Icons.settings),
-              onPressed: () {},
+              icon: Icon(Icons.info),
+              onPressed: () {
+                Navigator.maybePop(
+                  context,
+                  MaterialPageRoute(builder: (context) => AboutUs()),
+                );
+              },
             ),
           ],
         ),

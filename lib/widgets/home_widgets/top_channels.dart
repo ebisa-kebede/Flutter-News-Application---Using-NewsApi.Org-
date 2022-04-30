@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:newsapp/bloc/get_sources_bloc.dart';
 import 'package:newsapp/model/source.dart';
 import 'package:newsapp/model/source_response.dart';
@@ -70,11 +69,13 @@ class _TopChannelsWidgetState extends State<TopChannelsWidget> {
               child: GestureDetector(
                 onTap: () {
                   Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => SourceDetail(
-                                source: sources[index],
-                              )));
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => SourceDetail(
+                        source: sources[index],
+                      ),
+                    ),
+                  );
                 },
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
